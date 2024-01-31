@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "Poppins", sans-serif;
+    src: url(assets//fonts/Poppins-Regular.ttf);
+}
+
+:root {
+    --primary-color: #5757ff;
+    --secondary-color: #b4b4ff;
+    --background-color: #fff3e3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#header-navbar {
+    display: inline;
+}
+
+#header-navbar h1, p{
+    text-align: center;
+    color: white
+}
+
+#title-header {
+    background-color: var(--primary-color);
+    padding: 50px 0 50px 0;
+}
+
+nav{
+    text-align: end;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    top: 0;
+    position: sticky;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    font-family: "Quicksand";
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: var(--primary-color);
+}
+
+#a-navbar {
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: white;
+}
+
+#a-navbar:hover {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: var(--primary-color);
+    text-align: center;
+    font-weight: bold;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile header > p {
+    color: black;
+}
+
+.profile header > h2 {
+    color: var(--primary-color);
+}
+
+#more-info-section {
+    text-align: center;
+}
+
+
+.featured-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 var(--primary-color);
+    border-radius: 2em;
+    padding: 20px;
+}
+
+.profile img {
+    width: 200px;
+}
+
+#sejarah p {
+    color: black;
+    text-align: justify;
+}
+
+#geografis p{
+    color: black;
+    text-align: justify;
+}
+
+#wisata p {
+    color: black;
+    text-align: justify;
+}
+
+.a-sumber {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+    flex: 5;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8rem 2rem;
+}
+
+aside {
+    float: right;
+    flex: 1;
+}
+
+@media screen and (max-width: 1200px){
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+        align-self: stretch;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+}
+
+
+
+
+
+
+
